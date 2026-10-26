@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: discord-streamer-keep-live
+    runtime: python
+    buildCommand: pip install -r requirements-keep-live.txt
+    startCommand: python keep_live.py
+    healthCheckPath: /health
